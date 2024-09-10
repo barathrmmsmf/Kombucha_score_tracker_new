@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kombucha Score Keeper</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Kombucha Score Keeper</h1>
+        
+        <!-- Player management section -->
+        <div class="player-management">
+            <input type="text" id="playerNameInput" placeholder="Enter player name">
+            <button id="addPlayerBtn">Add Player</button>
+        </div>
+
+        <!-- Set number of rounds -->
+        <div class="round-setting">
+            <input type="number" id="roundsInput" placeholder="Set number of rounds" />
+        </div>
+
+        <!-- Players and Scores List -->
+        <div id="playersList">
+            <!-- Dynamically filled with JavaScript -->
+        </div>
+
+        <!-- Find Winner Section -->
+        <div class="winner-section">
+            <button id="findWinnerBtn">Find Winner</button>
+        </div>
+
+        <!-- Winner Section -->
+        <div id="winnerSection" class="hidden">
+            <h2>🎉 The Winner is <span id="winnerName"></span>! 🎉</h2>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

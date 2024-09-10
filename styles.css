@@ -1,0 +1,130 @@
+/* styles.css */
+body {
+    font-family: 'Poppins', sans-serif; /* Clean and modern font */
+    background-color: #fdfdfd;
+    color: #333;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    width: 95%;
+    max-width: 500px;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    text-align: center;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+h1 {
+    font-size: 28px;
+    color: #ff6347;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.player-management, .round-setting, .winner-section {
+    margin-bottom: 20px;
+}
+
+input {
+    padding: 10px;
+    width: 70%;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #ff6347;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #ff4500;
+}
+
+#playersList {
+    margin-top: 20px;
+}
+
+.player-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: #fafafa;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease-in-out;
+    animation: slideIn 0.5s ease-in-out;
+}
+
+.player-card:hover {
+    transform: scale(1.05);
+}
+
+.player-card span {
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-align: center;
+    width: 100%;
+}
+
+.player-card input {
+    width: 100%;
+    margin-bottom: 10px;
+    text-align: center;
+    padding: 8px;
+    border-radius: 8px;
+}
+
+button {
+    padding: 8px 15px;
+    border-radius: 5px;
+}
+
+#winnerSection {
+    padding: 10px;
+    border: 2px solid #32cd32;
+    border-radius: 10px;
+    display: none;
+    animation: slideIn 1s ease-in-out;
+}
+
+/* Winner highlight will just add a border and background color, nothing else changes */
+.winner-card {
+    background-color: #32cd32; /* Green background for winner */
+    border-color: #32cd32; /* Green border for winner */
+    color: white; /* White text for readability */
+}
+
+.hidden {
+    display: none;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    0% { opacity: 0; transform: scale(0.9); }
+    100% { opacity: 1; transform: scale(1); }
+}
+
+@keyframes slideIn {
+    0% { transform: translateY(50px); opacity: 0; }
+    100% { transform: translateY(0); opacity: 1; }
+}
